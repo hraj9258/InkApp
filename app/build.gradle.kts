@@ -68,4 +68,7 @@ dependencies {
 
     // MotionPredictor
     implementation(libs.androidx.input.motionprediction)
+
+    // Material Icons Extended
+    implementation(libs.androidx.material.icons.extended.android)
 }
