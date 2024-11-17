@@ -19,6 +19,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.ink.brush.Brush
 import com.hraj9258.inkapp.presentation.drawing_screen.components.toolbar_components.BrushList
+import com.hraj9258.inkapp.presentation.drawing_screen.components.toolbar_components.ColorPicker
 import com.hraj9258.inkapp.presentation.drawing_screen.components.toolbar_components.EraserList
 import com.hraj9258.inkapp.presentation.drawing_screen.components.toolbar_components.SizeSlider
 import com.hraj9258.inkapp.presentation.drawing_screen.components.toolbar_components.brushListForPreview
@@ -36,6 +37,10 @@ fun TopToolBar(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center
     ) {
+        ColorPicker(
+            selectedBrush = selectedBrush
+        )
+        Spacer(modifier = Modifier.size(8.dp))
         BrushList(
             brushList = brushList,
             selectedBrush = selectedBrush
